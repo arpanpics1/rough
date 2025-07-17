@@ -4,8 +4,10 @@ function Move-MouseCircle {
     $radius = 30
     $centerX = [System.Windows.Forms.Cursor]::Position.X
     $centerY = [System.Windows.Forms.Cursor]::Position.Y
+    $startAngle = Get-Random -Minimum 0 -Maximum 360  # Random starting angle
+    $direction = if ((Get-Random -Minimum 0 -Maximum 2) -eq 0) { 30 } else { -30 }  # Random direction: clockwise or counterclockwise
 
-    for ($angle = 0; $angle -lt 360; $angle += 30) {
+    for ($angle = $startAngle; $angle -lt ($startAngle + 360) -and $direction -gt 0 -or $angle -gt ($startAngle - 360) -and $direction -lt 0; $angle += $direction) {
         $radian = $angle * [Math]::PI / 180
         $x = $centerX + [Math]::Round($radius * [Math]::Cos($radian))
         $y = $centerY + [Math]::Round($radius * [Math]::Sin($radian))
@@ -16,10 +18,8 @@ function Move-MouseCircle {
 
 while ($true) {
     Move-MouseCircle
-    Start-Sleep -Seconds 10
+    Start-Sleep -Seconds 2  # Reduced delay for smoother transitions
 }
-
-
 
 ------
 
