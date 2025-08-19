@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Claude" version="22.1.16">
+  <diagram name="Oracle-Kafka-Streaming-Flow" id="oracle-kafka-flow">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Oracle Database -->
+        <mxCell id="oracle-db" value="Oracle Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Oracle Table -->
+        <mxCell id="oracle-table" value="Source Table&#xa;(Transaction Data)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="80" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Redo Logs -->
+        <mxCell id="redo-logs" value="Oracle Redo Logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="80" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- LogMiner -->
+        <mxCell id="logminer" value="Oracle LogMiner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- LogMiner Functions -->
+        <mxCell id="logminer-functions" value="• Start LogMiner Session&#xa;• Query V$LOGMNR_CONTENTS&#xa;• Parse DML Operations&#xa;• Extract SCN and Timestamp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;align=left" vertex="1" parent="1">
+          <mxGeometry x="220" y="320" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Spark Streaming Job -->
+        <mxCell id="spark-streaming" value="Spark Streaming Job" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Spark Components -->
+        <mxCell id="spark-components" value="• JDBC Connection to Oracle&#xa;• LogMiner Query Execution&#xa;• Data Transformation&#xa;• Batch Processing&#xa;• Error Handling and Retry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f7ff;strokeColor=#1890ff;fontSize=9;align=left" vertex="1" parent="1">
+          <mxGeometry x="460" y="320" width="200" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Processing -->
+        <mxCell id="data-processing" value="Data Processing Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="720" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Processing Steps -->
+        <mxCell id="processing-steps" value="• Parse CDC Events&#xa;• Schema Validation&#xa;• Data Enrichment&#xa;• Format Conversion&#xa;• Duplicate Detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;align=left" vertex="1" parent="1">
+          <mxGeometry x="705" y="200" width="170" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Kafka Cluster -->
+        <mxCell id="kafka-cluster" value="Apache Kafka Cluster" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd966;strokeColor=#d6b656;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="940" y="200" width="150" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Kafka Topic -->
+        <mxCell id="kafka-topic" value="Target Topic&#xa;(Streaming Data)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="965" y="320" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Monitoring and Alerting -->
+        <mxCell id="monitoring" value="Monitoring and Alerting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#ff6666;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="50" width="160" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Checkpoint -->
+        <mxCell id="checkpoint" value="Spark Checkpointing&#xa;(SCN Tracking)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="480" y="450" width="160" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Flow Arrows -->
+        <!-- Oracle to LogMiner -->
+        <mxCell id="flow1" value="Table Changes" style="endArrow=classic;html=1;rounded=0;fontSize=9;labelBackgroundColor=#ffffff" edge="1" parent="1" source="oracle-table" target="logminer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="340" as="sourcePoint" />
+            <mxPoint x="210" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Redo Logs to LogMiner -->
+        <mxCell id="flow2" value="Transaction Logs" style="endArrow=classic;html=1;rounded=0;fontSize=9;labelBackgroundColor=#ffffff" edge="1" parent="1" source="redo-logs" target="logminer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="140" as="sourcePoint" />
+            <mxPoint x="210" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- LogMiner to Spark -->
+        <mxCell id="flow3" value="CDC Events (INSERT/UPDATE/DELETE)" style="endArrow=classic;html=1;rounded=0;fontSize=9;labelBackgroundColor=#ffffff" edge="1" parent="1" source="logminer" target="spark-streaming">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="240" as="sourcePoint" />
+            <mxPoint x="420" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Spark to Processing -->
+        <mxCell id="flow4" value="Raw Data Stream" style="endArrow=classic;html=1;rounded=0;fontSize=9;labelBackgroundColor=#ffffff" edge="1" parent="1" source="spark-streaming" target="data-processing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="220" as="sourcePoint" />
+            <mxPoint x="690" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Processing to Kafka -->
+        <mxCell id="flow5" value="Processed Events" style="endArrow=classic;html=1;rounded=0;fontSize=9;labelBackgroundColor=#ffffff" edge="1" parent="1" source="processing-steps" target="kafka-cluster">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="875" y="240" as="sourcePoint" />
+            <mxPoint x="925" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Kafka to Topic -->
+        <mxCell id="flow6" value="Partitioned Data" style="endArrow=classic;html=1;rounded=0;fontSize=9;labelBackgroundColor=#ffffff" edge="1" parent="1" source="kafka-cluster" target="kafka-topic">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1015" y="290" as="sourcePoint" />
+            <mxPoint x="1015" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Monitoring connections -->
+        <mxCell id="monitor1" value="" style="endArrow=none;dashed=1;html=1;dashPattern=5 5;strokeColor=#999999" edge="1" parent="1" source="monitoring" target="spark-streaming">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="100" as="sourcePoint" />
+            <mxPoint x="560" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Checkpoint connection -->
+        <mxCell id="checkpoint1" value="SCN Persistence" style="endArrow=classic;html=1;rounded=0;dashed=1;fontSize=9;strokeColor=#666666;labelBackgroundColor=#ffffff" edge="1" parent="1" source="spark-streaming" target="checkpoint">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="290" as="sourcePoint" />
+            <mxPoint x="560" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="Oracle to Kafka Streaming Data Pipeline using LogMiner" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1f4e79" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="500" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Flow Description -->
+        <mxCell id="flow-desc" value="Real-time CDC streaming pipeline capturing database changes and publishing to Kafka topics" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="250" y="550" width="600" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Key Features Box -->
+        <mxCell id="features-box" value="Key Features:&#xa;• Low-latency streaming&#xa;• Exactly-once processing&#xa;• Fault tolerance&#xa;• Scalable architecture&#xa;• Real-time monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4a90e2;fontSize=10;align=left;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="150" height="100" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
