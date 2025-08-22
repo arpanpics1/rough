@@ -2,7 +2,7 @@
 
 ## Idea Overview
 
-A RAG (Retrieval-Augmented Generation) system that automates loan application reviews by intelligently retrieving relevant applicant data and generating data-driven approval recommendations or clear rejection explanations. The system combines document retrieval capabilities with advanced AI to streamline the entire loan evaluation process while maintaining compliance and improving customer experience.
+Building an AI powered system that automates loan application reviews by intelligently retrieving relevant applicant data and generating data-driven approval recommendations or clear rejection explanations. The system combines document retrieval capabilities using RAG (Retrieval-Augmented Generation) system to streamline the entire loan evaluation process while maintaining compliance and improving customer experience.
 
 ## Business/Technical Problems Being Solved
 
@@ -12,7 +12,6 @@ A RAG (Retrieval-Augmented Generation) system that automates loan application re
 - **High Operational Costs**: Large teams of loan officers and underwriters required for manual processing
 - **Poor Customer Experience**: Long wait times and lack of clear explanations for rejections frustrate customers
 - **Scalability Limitations**: Difficulty handling peak application volumes during favorable market conditions
-- **Compliance Monitoring**: Manual tracking of regulatory adherence across thousands of applications
 - **Limited Working Hours**: Traditional processing only occurs during business hours, slowing customer service
 
 ### Technical Problems:
