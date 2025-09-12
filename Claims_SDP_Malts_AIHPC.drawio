@@ -1,0 +1,157 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.2.1">
+  <diagram name="Page-1" id="92GYvt1eMUB_DhwkWftb">
+    <mxGraphModel dx="1678" dy="901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d80073;strokeColor=#A50040;entryX=0.446;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Aib2CssroNB5u3JF9ZFL-54" target="Aib2CssroNB5u3JF9ZFL-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1730" y="560" />
+              <mxPoint x="1730" y="740" />
+              <mxPoint x="1330" y="740" />
+            </Array>
+            <mxPoint x="1800" y="580" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-37" value="3. Model Response&#xa;📊 Generated Summary" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="700" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-1" value="LLM Inference Architecture with Malts System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="280" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-2" value="Hadoop Cluster (SDP)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="480" y="430" width="560" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="250" y="80" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-4" value="Claims AIF" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#006EAF;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="320" y="210" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-5" value="Claims Raw Data&#xa;📊 Input Dataset" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="270" y="100" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-6" value="Claims Summary Results&#xa;💾 Processed Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="270" y="160" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="30" y="80" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-8" value="BEM AIF" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#006EAF;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="85" y="95" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-9" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="30" y="200" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-10" value="SDP AIFs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#006EAF;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="85" y="275" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="Aib2CssroNB5u3JF9ZFL-2" source="Aib2CssroNB5u3JF9ZFL-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="145" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="145" />
+              <mxPoint x="220" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-56" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Pyspark jobs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=10;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-2">
+          <mxGeometry x="85" y="130" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-20" value="AIHPC LLM Models (GPU Cluster)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="470" width="340" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-22" value="Llama 3.3&#xa;🦙 Large Language Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-20">
+          <mxGeometry x="30" y="150" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-23" value="Mistral 7B&#xa;⚡ Efficient Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-20">
+          <mxGeometry x="170" y="150" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-24" value="Custom Fine-tuned&#xa;🎯 Domain-Specific" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-20">
+          <mxGeometry x="30" y="220" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-25" value="Other Models&#xa;🔬 Specialized" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-20">
+          <mxGeometry x="170" y="220" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-54" value="REST API Layer&#xa;• Model Inference Endpoints&#xa;• Authentication&#xa;• Request Validation&#xa;• Rate Limiting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-20">
+          <mxGeometry x="60" y="50" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-12" value="MSaas System" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="470" width="450" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-13" value="HPC Storage Layer&#xa;🗄️ Hitachi S3 Bucket" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-12">
+          <mxGeometry x="30" y="50" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-14" value="Data Staging Area&#xa;📥 Temporary Storage&#xa;• Data Validation&#xa;• Format Conversion&#xa;• Batch Preparation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;align=left;verticalAlign=top;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-12">
+          <mxGeometry x="250" y="40" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-15" value="Malts Inference Engine&#xa;🧠 Processing Core" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-12">
+          <mxGeometry x="240" y="150" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-17" value="Results Processing Unit&#xa;📊 Summary Generation&#xa;• Quality Control&#xa;• Data Aggregation&#xa;• Format Standardization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=0;align=left;verticalAlign=top;" vertex="1" parent="Aib2CssroNB5u3JF9ZFL-12">
+          <mxGeometry x="240" y="230" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#1ba1e2;strokeColor=#006EAF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Aib2CssroNB5u3JF9ZFL-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="555" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="555" />
+              <mxPoint x="1080" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Aib2CssroNB5u3JF9ZFL-13" target="Aib2CssroNB5u3JF9ZFL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Aib2CssroNB5u3JF9ZFL-14" target="Aib2CssroNB5u3JF9ZFL-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1550" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#60a917;strokeColor=#2D7600;entryX=0;entryY=0.375;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="Aib2CssroNB5u3JF9ZFL-15" target="Aib2CssroNB5u3JF9ZFL-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1590" y="680" as="sourcePoint" />
+            <mxPoint x="1799.9999999999995" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1690" y="635" />
+              <mxPoint x="1690" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-35" value="2. Inference Request&#xa;🧠 Model Processing" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="510" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-42" value="System Configuration&lt;br&gt;⚙️ Operational Parameters&lt;br&gt;• Batch Size: 20-40 records&lt;br&gt;• Parallel Workers: 8-32&lt;br&gt;• API Timeout: 60-600 seconds&lt;br&gt;• Retry Logic: 1-3 attempts&lt;br&gt;• Model Selection: Auto/Manual&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="800" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#1ba1e2;strokeColor=#006EAF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="610" as="sourcePoint" />
+            <mxPoint x="889.9999999999995" y="609.97" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1250" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-39" value="4. Final Results&#xa;✅ Processed Summary" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="570" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-31" value="1. Data Transfer&#xa;📤 Batch Upload" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="520" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-26" value="GPU Infrastructure&#xa;🖥️ High-Performance Computing&#xa;• NVIDIA A100/H100 GPUs&#xa;• CUDA Acceleration&#xa;• Memory Optimization&#xa;• Parallel Processing&#xa;• Resource Scheduling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="790" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-52" value="O2H framework" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="610" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Aib2CssroNB5u3JF9ZFL-53" value="Technology Stack:&lt;br&gt;• Python&lt;br&gt;• REST APIs (HTTP/HTTPS)&lt;br&gt;• JSON Data Format&lt;br&gt;• Connection Pooling&lt;br&gt;• Batch Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="805" width="160" height="105" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

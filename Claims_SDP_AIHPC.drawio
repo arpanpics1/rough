@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.2.1">
+  <diagram name="Page-1" id="wxu3v7a1ObFlQTK9Aqx9">
+    <mxGraphModel dx="1426" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-1" value="LLM Inference Architecture with Hadoop Integration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="400" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-2" value="Hadoop Cluster (SDP)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="530" y="460" width="670" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-44" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="350" y="120" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-11" value="Claims AIF" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#006EAF;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="450" y="285" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-3" value="Claims data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="385" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-7" value="Claims Summary Results&lt;br&gt;💾 Processed Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="385" y="210" width="165" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="AmGy_ax68KAXe9EeJWdM-2" source="AmGy_ax68KAXe9EeJWdM-44" target="AmGy_ax68KAXe9EeJWdM-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-47" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; font-weight: 400; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Claims%20AIF%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3BfontSize%3D10%3BfontColor%3D%23006EAF%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221005%22%20y%3D%22665%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="90" y="80" width="180" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-48" value="BEM AIF" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#006EAF;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="150" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-51" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; font-weight: 400; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Claims%20AIF%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3BfontSize%3D10%3BfontColor%3D%23006EAF%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221005%22%20y%3D%22665%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="90" y="237.5" width="180" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-52" value="SDP AIFs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#006EAF;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="145" y="285" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.019;entryY=0.64;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="AmGy_ax68KAXe9EeJWdM-2" source="AmGy_ax68KAXe9EeJWdM-55" target="AmGy_ax68KAXe9EeJWdM-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="172" />
+              <mxPoint x="290" y="172" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-55" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Pyspark jobs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=10;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-2">
+          <mxGeometry x="180" y="160" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-22" value="LLM Models (GPU Servers)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="520" width="260" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-23" value="Llama 3.3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-22">
+          <mxGeometry x="30" y="180" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-24" value="Mistral" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-22">
+          <mxGeometry x="150" y="180" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-36" value="REST API Layer&#xa;• Model Inference Endpoints&#xa;• Authentication&#xa;• Request Validation&#xa;• Rate Limiting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-22">
+          <mxGeometry x="45" y="50" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-37" value="Custom Fine-tuned&lt;br&gt;Models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-22">
+          <mxGeometry x="30" y="220" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-38" value="Other models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="AmGy_ax68KAXe9EeJWdM-22">
+          <mxGeometry x="155" y="220" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#60a917;strokeColor=#2D7600;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AmGy_ax68KAXe9EeJWdM-36" target="AmGy_ax68KAXe9EeJWdM-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1250" y="630" />
+              <mxPoint x="1250" y="695" />
+            </Array>
+            <mxPoint x="1385" y="885" as="sourcePoint" />
+            <mxPoint x="1250" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-39" value="GPU Compute Cluster&#xa;• NVIDIA A100/H100&#xa;• Model Hosting&#xa;• Resource Management&#xa;• Inference Optimization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="790" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-42" value="Key Features:&lt;br&gt;• Fault-tolerant processing&lt;br&gt;• Dynamic resource allocation&lt;br&gt;• Multi-model inference support&lt;br&gt;• Real-time monitoring&lt;br&gt;• Configurable retry logic&lt;br&gt;• Performance optimization&lt;br&gt;• Error handling &amp;amp; logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;align=left;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="710" y="920" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-41" value="Configurable Parameters:&lt;br&gt;• Batch Size: 20-40 records&lt;br&gt;• Parallel Executors: 4-20&lt;br&gt;• API Timeout: 30-300 seconds&lt;br&gt;• Retry Count: 1-5 attempts&lt;br&gt;• Memory per Executor: 2-16 GB&lt;br&gt;• CPU Cores per Executor: 2-8&lt;br&gt;• Model Selection: Auto/Manual" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="920" width="185" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-43" value="Technology Stack:&lt;br&gt;• Apache Spark (PySpark)&lt;br&gt;• YARN Resource Manager&lt;br&gt;• HDFS Distributed Storage&lt;br&gt;• Apache Hive (Metadata)&lt;br&gt;• REST APIs (HTTP/HTTPS)&lt;br&gt;• JSON Data Format&lt;br&gt;• Connection Pooling&lt;br&gt;• Batch Processing Framework" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="920" y="920" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#1ba1e2;strokeColor=#006EAF;entryX=0.006;entryY=0.413;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="AmGy_ax68KAXe9EeJWdM-3" target="AmGy_ax68KAXe9EeJWdM-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1135" y="580" as="sourcePoint" />
+            <mxPoint x="1380" y="604" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-53" value="1. Batch Inference Request&lt;br&gt;🧠 Model Processing" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="570" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AmGy_ax68KAXe9EeJWdM-54" value="2. Final Results&lt;br&gt;✅ Processed Summary" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="690" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
