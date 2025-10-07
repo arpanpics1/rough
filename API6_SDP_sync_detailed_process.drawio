@@ -1,0 +1,207 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="API6 to SDP Flow" id="z5hCLrJaLy3T-OKrU36x">
+    <mxGraphModel dx="1931" dy="1060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-1" value="API6 Gateway to SDP Data Processing Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="320" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-2" value="LLMs Server&lt;br&gt;(AIHPC Server)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-3" value="API6&lt;br&gt;(API Gateway)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="790" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-2" target="yNVOyMO0XLU5G7ZC9_39-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-5" value="API Requests" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-4">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-6" value="Kafka Topic&lt;br&gt;(Log Stream)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1040" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-3" target="yNVOyMO0XLU5G7ZC9_39-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-8" value="Sync Logs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-7">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-9" value="Hadoop Cluster (SDP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="520" y="580" width="1520" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-10" value="SIP (AIF) - Staging Area" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="560" y="640" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-11" value="Staging Hive DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="600" y="700" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-6" target="yNVOyMO0XLU5G7ZC9_39-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="500" as="sourcePoint" />
+            <mxPoint x="700" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1120" y="560" />
+              <mxPoint x="700" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-13" value="Stream Logs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-12">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-14" value="Batch Job Process&lt;br&gt;(ETL Pipeline)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="700" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-11" target="yNVOyMO0XLU5G7ZC9_39-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-16" value="Read Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-15">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-17" value="Config File&lt;br&gt;(Client-Tenant&lt;br&gt;Hive DB Mapping)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="900" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;dashed=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-17" target="yNVOyMO0XLU5G7ZC9_39-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="840" />
+              <mxPoint x="960" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-19" value="Read Mapping" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-18">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-20" value="SIP (AIF) - Tenant Databases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="1260" y="700" width="360" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-21" value="Tenant Hive DB 1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1300" y="760" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-22" value="Tenant Hive DB 2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1460" y="760" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-23" value="Tenant Hive DB N" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1440" y="860" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-14" target="yNVOyMO0XLU5G7ZC9_39-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-25" value="Write Data&lt;br&gt;(Valid Mapping)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-24">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-14" target="yNVOyMO0XLU5G7ZC9_39-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-27" value="Offset Management Table&lt;br&gt;(Kafka Offset + Tenant DB)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1330" y="960" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-21" target="yNVOyMO0XLU5G7ZC9_39-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370" y="880" />
+              <mxPoint x="1370" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-29" value="Update Offset" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-28">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-30" value="Unprocessed_Table&lt;br&gt;(Invalid Mapping)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="910" y="1080" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#b85450" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="800" as="sourcePoint" />
+            <mxPoint x="1040" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-32" value="Move Invalid Entries&lt;br&gt;(No Mapping)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=default;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-31">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="19" y="-32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#d79b00;dashed=1;strokeWidth=3;" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-30" target="yNVOyMO0XLU5G7ZC9_39-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="1120" />
+              <mxPoint x="1150" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-34" value="Reprocess After&lt;br&gt;Config Update" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-33">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-35" value="Reconciliation Job&lt;br&gt;(End of Day)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1660" y="700" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;dashed=1;strokeColor=#d6b656;strokeWidth=3;" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-6" target="yNVOyMO0XLU5G7ZC9_39-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1930" y="460" />
+              <mxPoint x="1930" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-37" value="Read Kafka Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-36">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;dashed=1;strokeColor=#d6b656;strokeWidth=3;" edge="1" parent="1" source="yNVOyMO0XLU5G7ZC9_39-27" target="yNVOyMO0XLU5G7ZC9_39-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-39" value="Compare Offsets" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="yNVOyMO0XLU5G7ZC9_39-38">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="42" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-47" value="Key Process Steps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=17;fontStyle=1;verticalAlign=top;align=left" vertex="1" parent="1">
+          <mxGeometry x="540" y="1030" width="340" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-48" value="1. API6 capture req/resp logs&amp;nbsp;of LLMs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1060" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-49" value="2. Logs synced to EEH0 Kafka topic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1080" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-50" value="3. Stream to Staging Hive DB in SDP" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1100" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-51" value="4. Batch job reads config &amp;amp; processes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1120" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-52" value="5. Valid → Tenant DB + Offset update" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1140" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-53" value="6. Invalid → Unprocessed_Table" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1160" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yNVOyMO0XLU5G7ZC9_39-54" value="7. EOD reconciliation validates data" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1180" width="250" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
