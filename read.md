@@ -1,42 +1,29 @@
-
-
-pip install mcp pydantic
-
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "python",
-      "args": [
-        "-m",
-        "filesystem_mcp_server"
-      ],
-      "env": {
-        "FILESYSTEM_BASE_DIR": ".",
-        "FILESYSTEM_MAX_FILE_SIZE": "10485760",
-        "FILESYSTEM_ALLOWED_EXTENSIONS": "py,js,ts,json,md,txt,html,css,xml,yml,yaml,toml,ini,cfg,log"
-      }
-    }
-  }
-}
-
-
-
-{
-  "servers": {
-    "mysql-readonly": {
-      "command": "/Users/arpan/Documents/Github/Python/GenAI/ai-cookbook/venv/bin/python",
-      "args": [
-        "/Users/arpan/Documents/Github/Python/GenAI/ai-cookbook/mcp/crash-course/mysql_mcp_server.py",
-        "stdio"
-      ],
-      "env": {
-        "MYSQL_HOST": "localhost",
-        "MYSQL_PORT": "3306",
-        "MYSQL_USER": "root",
-        "MYSQL_PASSWORD": "password",
-        "MYSQL_DATABASE": "billing_db",
-        "MYSQL_POOL_SIZE": "5"
-      }
-    }
-  }
-}
+ metrics:
+      query: |
+        SELECT 
+          total_records,
+          failed_records,
+          success_records,
+          processing_date
+        FROM process_summary
+        WHERE process_id = :process_id
+        AND run_date = :run_date
+      
+      parameters:
+        process_id: "CLAIMS_PROC_001"
+        run_date: "{current_date}"
+      
+      fields:
+        - column: "total_records"
+          label: "Total Claims Records"
+          format: "number"
+        - column: "failed_records"
+          label: "Failed Records"
+          format: "number"
+          highlight_if: "> 0"  # Optional: highlight if value > 0
+        - column: "success_records"
+          label: "Successfully Processed"
+          format: "number"
+        - column: "processing_date"
+          label: "Processing Date"
+          format: "date"
