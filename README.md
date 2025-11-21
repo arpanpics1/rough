@@ -1,70 +1,22 @@
-Add-Type -AssemblyName System.Windows.Forms
+Big shoutout to Dinesh for all the awesome work he’s done in getting the observability platform up and running for Malts. Syncing the APISIX logs into the SDP system—especially within such a short timeline—was no small task, and he handled it like a pro.
 
-function Move-MouseCircle {
-    $radius = 30
-    $centerX = [System.Windows.Forms.Cursor]::Position.X
-    $centerY = [System.Windows.Forms.Cursor]::Position.Y
-    $startAngle = Get-Random -Minimum 0 -Maximum 360  # Random starting angle
-    $direction = if ((Get-Random -Minimum 0 -Maximum 2) -eq 0) { 30 } else { -30 }  # Random direction: clockwise or counterclockwise
+Thanks for pulling all the pieces together, coordinating with everyone, and keeping things moving smoothly. Really appreciate your quick thinking, humble attitude, and the way you always step up when needed.
 
-    for ($angle = $startAngle; $angle -lt ($startAngle + 360) -and $direction -gt 0 -or $angle -gt ($startAngle - 360) -and $direction -lt 0; $angle += $direction) {
-        $radian = $angle * [Math]::PI / 180
-        $x = $centerX + [Math]::Round($radius * [Math]::Cos($radian))
-        $y = $centerY + [Math]::Round($radius * [Math]::Sin($radian))
-        [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
-        Start-Sleep -Milliseconds 100
-    }
-}
-
-while ($true) {
-    Move-MouseCircle
-    Start-Sleep -Seconds 2  # Reduced delay for smoother transitions
-}
-
-------
+Great work, Dinesh—thank you for making this happen! 🙌
 
 
 
 
-Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyName System.Drawing
+A big thanks to Anshul for all his hard work and support in getting the observability platform ready. His efforts in moving data from HDFS to the Kafka topic were a huge part of making things work end-to-end.
 
-# Add mouse click functionality using Win32 API
-Add-Type @"
-using System;
-using System.Runtime.InteropServices;
-public class MouseSimulator {
-    [DllImport("user32.dll", CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
-    public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
-    public const int MOUSEEVENTF_LEFTDOWN = 0x02;
-    public const int MOUSEEVENTF_LEFTUP = 0x04;
-}
-"@
+Really appreciate how he coordinated with everyone involved and made sure the data side of things was sorted out smoothly. His willingness to jump in, stay patient, and keep things on track made a big difference to the overall delivery.
 
-function Move-MouseCircle {
-    $radius = 30
-    $centerX = [System.Windows.Forms.Cursor]::Position.X
-    $centerY = [System.Windows.Forms.Cursor]::Position.Y
+Thanks a ton, Anshul, for your dedication and teamwork—you helped make this whole thing come together! 🙌
 
-    for ($angle = 0; $angle -lt 360; $angle += 30) {
-        $radian = $angle * [Math]::PI / 180
-        $x = $centerX + [Math]::Round($radius * [Math]::Cos($radian))
-        $y = $centerY + [Math]::Round($radius * [Math]::Sin($radian))
-        [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
-        Start-Sleep -Milliseconds 100
-    }
-}
 
-function Left-Click {
-    $pos = [System.Windows.Forms.Cursor]::Position
-    [MouseSimulator]::mouse_event(0x02, $pos.X, $pos.Y, 0, 0)  # Left button down
-    Start-Sleep -Milliseconds 100
-    [MouseSimulator]::mouse_event(0x04, $pos.X, $pos.Y, 0, 0)  # Left button up
-}
 
-# Main loop
-while ($true) {
-    Move-MouseCircle
-    Left-Click
-    Start-Sleep -Seconds 10
-}
+A huge shoutout to Kha for his amazing dedication and work ethic. The way he approaches problems, stays focused, and keeps such a positive attitude really stands out.
+
+Thank you for all the help in fixing the DQ4 AIF issues—your effort and commitment made a big difference. Your working style and willingness to step in whenever needed are truly appreciated.
+
+Great job, Kha! Thanks for being such a reliable and supportive teammate. 🙌
